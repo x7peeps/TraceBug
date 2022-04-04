@@ -1,0 +1,3 @@
+[submodule "Resources/cve"]
+	path = Resources/cve
+	url = git@github.com:trickest/cve.git
