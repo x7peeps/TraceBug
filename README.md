@@ -7,3 +7,4 @@ A repo for some pentest tests.
 
 # References
 https://github.com/trickest/cve
+https://github.com/CVEProject/cvelist

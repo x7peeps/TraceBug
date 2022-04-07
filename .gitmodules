@@ -1,3 +1,6 @@
 [submodule "Resources/cve"]
 	path = Resources/cve
 	url = git@github.com:trickest/cve.git
+[submodule "Resources/cvelist"]
+	path = Resources/cvelist
+	url = git@github.com:CVEProject/cvelist.git
