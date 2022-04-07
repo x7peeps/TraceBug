@@ -22,6 +22,7 @@ jobs:
     steps:
       - name: update submodule Resources/cve
         run: |
+          cd ..
           git submodule foreach git pull
       - name: Commit
         run: |
