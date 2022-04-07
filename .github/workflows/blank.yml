@@ -22,6 +22,7 @@ jobs:
     steps:
       - name: update submodule Resources/cve
         run: |
+          git init 
           git submodule update
 #       - name: update submodule Resources/cve
 #         run: |
