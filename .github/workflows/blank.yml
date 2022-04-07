@@ -22,17 +22,7 @@ jobs:
     steps:
       - name: update submodule Resources/cve
         run: |
-          pwd
-          ls
           git submodule foreach git pull
-#       - name: update submodule Resources/cve
-#         run: |
-#           cd Resources/cve @ 0c3422e
-#           git pull
-#       - name: update submodule Resources/cvelist
-#         run: |
-#           cd Resources/cvelist
-#           git pull
       - name: Commit
         run: |
           git config --global user.email xtpeeps@gmail.com
