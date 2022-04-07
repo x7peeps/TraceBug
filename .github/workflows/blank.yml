@@ -22,8 +22,8 @@ jobs:
     steps:
       - name: update submodule Resources/cve
         run: |
-          git config --global init.defaultBranch master
-          git init 
+#          git config --global init.defaultBranch master
+#          git init 
           git submodule update
 #       - name: update submodule Resources/cve
 #         run: |
