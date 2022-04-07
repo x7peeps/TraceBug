@@ -24,9 +24,7 @@ jobs:
         run: |
           pwd
           ls
-#          git config --global init.defaultBranch master
-#          git init 
-          git submodule update
+          git submodule foreach git pull
 #       - name: update submodule Resources/cve
 #         run: |
 #           cd Resources/cve @ 0c3422e
