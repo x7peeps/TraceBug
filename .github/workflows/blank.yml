@@ -22,13 +22,7 @@ jobs:
     steps:
       - name: update submodule 
         run: |
-          bash cd TraceBug
-          bash cat README.md
-          bash dir
-          bash pwd
-          bash ls
-          bash ls -a
-          bash git submodule foreach git pull
+          "git submodule foreach git pull"
       - name: Commit
         run: |
           git config --global user.email xtpeeps@gmail.com
