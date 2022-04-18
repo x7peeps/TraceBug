@@ -20,15 +20,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: update submodule Resources/cve
+      - name: update submodule 
         run: |
-          cd TraceBug
-          cat README.md
-          dir
-          pwd
-          ls
-          ls -a
-          git submodule foreach git pull
+          bash cd TraceBug
+          bash cat README.md
+          bash dir
+          bash pwd
+          bash ls
+          bash ls -a
+          bash git submodule foreach git pull
       - name: Commit
         run: |
           git config --global user.email xtpeeps@gmail.com
