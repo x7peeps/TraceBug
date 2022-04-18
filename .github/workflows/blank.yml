@@ -31,6 +31,7 @@ jobs:
           git config --global user.email xtpeeps@gmail.com
           git config --global user.name x7peeps
           git add .
+          git branch --set-upstream-to origin/master
           git commit -m "Schdule checkpoint over." -a
       - name: Push changes
         uses: ad-m/github-push-action@master 
