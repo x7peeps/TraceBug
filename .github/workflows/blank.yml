@@ -22,7 +22,10 @@ jobs:
     steps:
       - name: update submodule 
         run: |
-          "git submodule foreach git pull"
+          git submodule init
+          git submodule foreach update
+          git submodule foreach update --init
+          git submodule foreach --recursive git submodule update --init
       - name: Commit
         run: |
           git config --global user.email xtpeeps@gmail.com
