@@ -21,7 +21,6 @@ jobs:
     steps:
       - name: update submodule 
         run: |
-          sudo apt update git
           git init 
           git submodule init
           git submodule foreach update
