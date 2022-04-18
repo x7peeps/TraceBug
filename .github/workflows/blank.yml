@@ -11,8 +11,7 @@ on:
     branches: [ master ]
   schedule:       
     - cron: '0 11 */5 * *'
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -22,6 +21,7 @@ jobs:
     steps:
       - name: update submodule 
         run: |
+          git init 
           git submodule init
           git submodule foreach update
           git submodule foreach update --init
