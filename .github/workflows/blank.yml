@@ -31,6 +31,7 @@ jobs:
           git config --global user.email xtpeeps@gmail.com
           git config --global user.name x7peeps
           git add .
+          git pull origin master --allow-unrelated-histories
           git checkout master
           git branch -u origin/master
           git commit -m "Schdule checkpoint over." -a
