@@ -23,6 +23,11 @@ jobs:
       - name: update submodule Resources/cve
         run: |
           cd TraceBug
+          cat README.md
+          dir
+          pwd
+          ls
+          ls -a
           git submodule foreach git pull
       - name: Commit
         run: |
