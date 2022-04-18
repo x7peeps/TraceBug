@@ -28,12 +28,12 @@ jobs:
           git submodule foreach --recursive git submodule update --init
       - name: Commit
         run: |
-          git config --global user.email xtpeeps@qq.com
+          git config --global user.email xtpeeps@gmail.com
           git config --global user.name x7peeps
-          git add .
           git pull origin master --allow-unrelated-histories
           git checkout master
           git branch -u origin/master
+          git add .
           git commit -m "Schdule checkpoint over." -a
       - name: Push changes
         uses: ad-m/github-push-action@master 
